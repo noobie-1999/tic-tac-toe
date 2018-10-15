@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Player 1 :   X"
+            android:textSize="30dp"
+            android:id="@+id/player1Score"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Player 2 :   O"
+            android:layout_below="@+id/player1Score"
+            android:textSize="30dp"
+            android:id="@+id/player2Score"/>
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  RESET  "
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/details"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/column1">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button00"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button01"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button02"
+            android:textSize="64dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/column1"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/column2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button10"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button11"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button12"
+            android:textSize="64dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/column2"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/column3">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button20"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button21"
+            android:textSize="64dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/button22"
+            android:textSize="64dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/column3"
+        android:text="WELCOME TO TIC TAC TOE"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/result"/>
+
+</RelativeLayout>
